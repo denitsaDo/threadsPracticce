@@ -8,7 +8,7 @@ public class Demo {
         count++;    //it is locked by synchronized and only one thread can change it.
     }
     public static void main(String[] args) {
-        Thread t1 = new Thread(new Runnable() {
+        Thread t1 = new Thread(new Runnable() {   //can be replaced with lambda
             @Override
             public void run() {
                 for (int i = 0; i < 10000 ; i++) {
